@@ -1,0 +1,24 @@
+[
+  {
+    "nama": "Imam",
+    "umur": 21,
+    "nim": "2217020167",
+    "lulus": true,
+    "hobby": ["coding", "gaming"],
+    "pembimbing": {
+      "pembimbing1": "asraf wisma",
+      "pembimbing2": "ikhwanul rizki"
+    }
+  },
+  {
+    "nama": "Imam",
+    "umur": 21,
+    "nim": "2217020167",
+    "lulus": true,
+    "hobby": ["coding", "gaming"],
+    "pembimbing": {
+      "pembimbing1": "asraf wisma",
+      "pembimbing2": "ikhwanul rizki"
+    }
+  }
+]
