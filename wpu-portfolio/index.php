@@ -170,7 +170,8 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             <div class="card">
               <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h2>JSON</h2>
+                <p class="card-text">Membuat file json di awal video</p>
               </div>
             </div>
           </div>
@@ -179,7 +180,8 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             <div class="card">
               <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h2>Membuat WPU Hut</h2>
+                <p class="card-text">Membuat website sederhana dengan mengambil data makanan.</p>
               </div>
             </div>
           </div>
@@ -188,7 +190,8 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             <div class="card">
               <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h2>Membuat Website Film sederhana</h2>
+                <p class="card-text">Mengambil data dari API open source OMDB.</p>
               </div>
             </div>
           </div>   
@@ -199,7 +202,8 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             <div class="card">
               <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h2>Membuat Website portofolio</h2>
+                <p class="card-text">Membuat Website Portofolio menggunakan API youtube dan Instagram</p>
               </div>
             </div>
           </div> 
@@ -207,7 +211,8 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             <div class="card">
               <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <h2>Membuat Rest Server Sederhana</h2>
+                <p class="card-text">Membuat Rest server sederhana dan mengambil data di database.
                 </p>
               </div>
             </div>
@@ -217,7 +222,8 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             <div class="card">
               <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h2>Membuat Rest Client</h2>
+                <p class="card-text">Mengambil data bukan lagi dari database namun dari rest server yang sudah di buat sebelumnya menggunakan guzzly.</p>
               </div>
             </div>
           </div>
