@@ -57,6 +57,10 @@ class CI_Controller {
 	 * @var	object
 	 */
 	private static $instance;
+	public $load;
+	public $mahasiswa;
+	public $mahasiswa_model;
+	public $form_validation;
 
 	/**
 	 * Class constructor

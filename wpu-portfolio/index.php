@@ -20,6 +20,22 @@ $urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyBhCIQX
 $result = get_CURL($urlLatestVideo);
 $latestVideoId = $result['items'][0]['id']['videoId'];
 
+//instagram API
+$accessToken = "IGACL0hhX3ELdBZAFBXT3FtV253eDlvb2xkU2U2cGY5cTNyeHhKanJka1Bxc2ptWHdINUN1SE5iVDZAWbzhmbWpYSElKTGgyVllreGFBcHBqNFlzSUpRSlgwOEpMa0hIVEp3Ykx5LWNzbFRGNWdsNGRCNWdSVm5uQXpjWEgwdEtndwZDZD";
+
+$result2 = get_Curl("https://graph.instagram.com/v22.0/me?fields=username,profile_picture_url,followers_count&access_token=IGACL0hhX3ELdBZAFBXT3FtV253eDlvb2xkU2U2cGY5cTNyeHhKanJka1Bxc2ptWHdINUN1SE5iVDZAWbzhmbWpYSElKTGgyVllreGFBcHBqNFlzSUpRSlgwOEpMa0hIVEp3Ykx5LWNzbFRGNWdsNGRCNWdSVm5uQXpjWEgwdEtndwZDZD");
+
+$usernameIG = $result2['username'];
+$profilePictureIG = $result2['profile_picture_url'];
+$followersIG = $result2['followers_count'];
+
+//media IG
+$resultGambar1 = get_Curl("https://graph.instagram.com/v22.0/18140029366405475?fields=media_url&access_token=IGACL0hhX3ELdBZAFBXT3FtV253eDlvb2xkU2U2cGY5cTNyeHhKanJka1Bxc2ptWHdINUN1SE5iVDZAWbzhmbWpYSElKTGgyVllreGFBcHBqNFlzSUpRSlgwOEpMa0hIVEp3Ykx5LWNzbFRGNWdsNGRCNWdSVm5uQXpjWEgwdEtndwZDZD");
+
+
+$gambar1 = $resultGambar1['media_url'];
+
+
 ?>
 
 
@@ -123,29 +139,23 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
               </div>
             </div>
             <div class="col-md-5">
-              <div class="row">
-                <div class="col-md-4">
-                    <img src="img/profile1.png" width="200" class="rounded-circle img-thumbnail">
-                </div>
-                <div class="col-md-8">
-                  <h5>@i_yasir_k</h5>
-                  <p>300 Followers.</p>
+            <div class="row">
+              <div class="col md-4">
+                <img src="<?= $profilePictureIG; ?>" width="200" class="rounded-circle img-thumbnail">
+              </div>
+              <div class="col-md-8">
+                <h5><?= $usernameIG ?></h5>
+                <p><?= $followersIG ?> Followers.</p>
+              </div>
+            </div>
+
+            <div class="row mt-3 pb-3">
+              <div class="col">
+                <div class="ig-thumbnail">
+                  <img src="<?= $gambar1; ?>">
                 </div>
               </div>
-
-              <div class="row mt-3 pb-3">
-                <div class="col">
-                    <div class="ig-thumbnail">
-                      <img src="img/thumbs/1.png">
-                </div>
-                <div class="col">
-                    <div class="ig-thumbnail">
-                      <img src="img/thumbs/2.png">
-                </div>
-                <div class="col">
-                    <div class="ig-thumbnail">
-                      <img src="img/thumbs/3.png">
-                </div>
+            </div>
                 
                 </div>
               </div>
