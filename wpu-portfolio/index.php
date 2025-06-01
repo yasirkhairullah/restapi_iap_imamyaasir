@@ -23,14 +23,14 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
 //instagram API
 $accessToken = "IGACL0hhX3ELdBZAFBXT3FtV253eDlvb2xkU2U2cGY5cTNyeHhKanJka1Bxc2ptWHdINUN1SE5iVDZAWbzhmbWpYSElKTGgyVllreGFBcHBqNFlzSUpRSlgwOEpMa0hIVEp3Ykx5LWNzbFRGNWdsNGRCNWdSVm5uQXpjWEgwdEtndwZDZD";
 
-$result2 = get_Curl("https://graph.instagram.com/v22.0/me?fields=username,profile_picture_url,followers_count&access_token=IGACL0hhX3ELdBZAFBXT3FtV253eDlvb2xkU2U2cGY5cTNyeHhKanJka1Bxc2ptWHdINUN1SE5iVDZAWbzhmbWpYSElKTGgyVllreGFBcHBqNFlzSUpRSlgwOEpMa0hIVEp3Ykx5LWNzbFRGNWdsNGRCNWdSVm5uQXpjWEgwdEtndwZDZD");
+$result2 = get_Curl("https://graph.instagram.com/v22.0/me?fields=username,profile_picture_url,followers_count&access_token=IGACL0hhX3ELdBZAE1iR2dEcUJheE1mR2N1MzdybmZAWUU1zNVV0OW5telNPZATQ5ZA1pqSFFxbzJnMG91UG01ZAUVPNC1COHc4SnhKdUNkTVh2ZATIxd1R4ZAjlOclBhZA3lLYWJ2NEM3V0RkdVNPcHZAzVURjSlVBZA1lRN08zVTdENzNmYwZDZD");
 
 $usernameIG = $result2['username'];
 $profilePictureIG = $result2['profile_picture_url'];
 $followersIG = $result2['followers_count'];
 
 //media IG
-$resultGambar1 = get_Curl("https://graph.instagram.com/v22.0/18140029366405475?fields=media_url&access_token=IGACL0hhX3ELdBZAFBXT3FtV253eDlvb2xkU2U2cGY5cTNyeHhKanJka1Bxc2ptWHdINUN1SE5iVDZAWbzhmbWpYSElKTGgyVllreGFBcHBqNFlzSUpRSlgwOEpMa0hIVEp3Ykx5LWNzbFRGNWdsNGRCNWdSVm5uQXpjWEgwdEtndwZDZD");
+$resultGambar1 = get_Curl("https://graph.instagram.com/v22.0/18140029366405475?fields=media_url&access_token=IGACL0hhX3ELdBZAE1iR2dEcUJheE1mR2N1MzdybmZAWUU1zNVV0OW5telNPZATQ5ZA1pqSFFxbzJnMG91UG01ZAUVPNC1COHc4SnhKdUNkTVh2ZATIxd1R4ZAjlOclBhZA3lLYWJ2NEM3V0RkdVNPcHZAzVURjSlVBZA1lRN08zVTdENzNmYwZDZD");
 
 
 $gambar1 = $resultGambar1['media_url'];
